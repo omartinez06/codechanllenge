@@ -15,11 +15,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class PercentageService {
 	
-	@Autowired
-	private PercentageClient percentageClient;
+	@Autowired 
+	PercentageClient percentageClient;
 	
-	@Autowired
-    private CacheManager cacheManager;
+	@Autowired 
+	CacheManager cacheManager;
 	
 	/**
      * Retrieves the percentage from the external service and caches it.
